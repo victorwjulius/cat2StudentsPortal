@@ -13,8 +13,15 @@ h1
 
 .reg-form-main-container
 {
+    overflow-y: auto;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
     width: 100%;
-    height: 430px;
+    height: auto;
+    min-height: 430px;
+    max-height: 600px;
+    /*margin-bottom: 0;*/
 }
 .reg-form-wrapper
 {
@@ -150,6 +157,18 @@ input[type="submit"]:hover
 {
     cursor: pointer;
     color: #4caf50;
+}
+
+.reg-footer
+{
+    background-color: #808000;
+    border: 1px rgba(56,217,131,1) dotted;
+    min-width: 100%;
+    max-width: 100%;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -605,11 +624,26 @@ and studentsMaterials.php*/
     margin-bottom: 10px;
 }
 
+.home-materials-footer
+{
+    background-color: #808000;
+    border: 1px rgba(56,217,131,1) dotted;
+    min-width: 100%;
+    max-width: 100%;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
 
 
 /*footer.php*/
 .my-footer
 {
+    z-index: 1;
     margin-top: 20px;
     background-color: #808000;
     border: 1px rgba(56,217,131,1) dotted;
@@ -618,7 +652,6 @@ and studentsMaterials.php*/
     min-width: 100%;
     max-width: 100%;
     height: 80px;
-    margin-top: 30px;
     display: grid;
     justify-content: center;
     align-content: center;

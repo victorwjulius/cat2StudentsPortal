@@ -18,7 +18,7 @@
     </div>
     <div class="bg-info bg-info after-header">
         <a href="home.php">Home</a>
-        <a href="registrationForm.php">Staff</a>
+        <a href="teachersRegistrationForm.php">Staff</a>
         <a href="studentsLoginForm.php">Student</a>
 
     </div>

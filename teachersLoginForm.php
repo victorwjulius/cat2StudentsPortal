@@ -22,7 +22,7 @@ include 'header.php';
 
         <p class="not-registered">
             <nobr>Not registered?
-            <a href="registrationForm.php">Sign up</a>
+            <a href="teachersRegistrationForm.php">Sign up</a>
             </nobr>
         </p>
 
