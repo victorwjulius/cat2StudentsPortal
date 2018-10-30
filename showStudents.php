@@ -15,23 +15,34 @@ session_start();
 </head>
 <body>
 
-<h1>Student's Info</h1>
+<div class="admin-nav">
 
-<a href="saveStudent.php" class="show-save">Save student</a>
-<hr>
+<div class="ssu-header">
+<h1>Alice Admin Section</h1>
+</div>
 
+<div class="ssu-after-header">
+<a href="/regAndLog/saveStudent.php" class="ts-link1"><nobr>Save student</nobr></a>
+</div>
+
+</div>
+
+<div class="ssu-student">
 <p class="logged-in">You are logged in as <?php echo $_SESSION['username'] ;?></p>
 <p class="logged-in"><a href="teachersLoginForm.php">Log-Out</a></p>
 
+<div class="table">
+    <h3>Table for Students' Details</h3>
 <table cellpadding="7">
+    <caption>Students' Details</caption>
     <tr>
-        <th>Admission Number</th>
+        <th><nobr>Admission Number</nobr></th>
         <th>Name</th>
         <th>Username</th>
         <th>D.O.B</th>
         <th>Gender</th>
         <th>Class</th>
-        <th>Guardian's Number</th>
+        <th><nobr>Guardian's Number</nobr></th>
         <th>Update</th>
         <th>Delete</th>
     </tr>
@@ -57,5 +68,15 @@ session_start();
 ";
     }
     ?>
+</table>
+</div>
+
+</div>
+
+<div class="ssu-footer">
+
+    <p>powered by Tazusi.co ltd &copy;<?php echo date("Y");?></p>
+
+</div>
 </body>
 </html>

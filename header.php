@@ -17,9 +17,9 @@
         <h2>Alice School Portal</h2>
     </div>
     <div class="bg-info bg-info after-header">
-        <a href="home.php">Home</a>
-        <a href="teachersRegistrationForm.php">Staff</a>
-        <a href="studentsLoginForm.php">Student</a>
+        <a href="/regAndLog/home.php">Home</a>
+        <a href="/regAndLog/teachersRegistrationForm.php">Staff</a>
+        <a href="/regAndLog/studentsLoginForm.php">Student</a>
 
     </div>
 </div>

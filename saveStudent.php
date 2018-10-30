@@ -12,10 +12,21 @@ session_start();
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="Bootstrap/css/style.css">
 </head>
-<body class="save-student">
-<h1 class="header">Add Student</h1>
-<hr>
+<body>
 
+<div class="admin-nav">
+
+<div class="ssu-header">
+<h1 class="header">Alice Admin Section</h1>
+</div>
+
+<div class="ssu-after-header">
+<a href="/regAndLog/showStudents.php" class="ts-link1"><nobr>Show student</nobr></a>
+</div>
+
+</div>
+
+<div class="ssu-student">
 <p class="logged-in">You are logged in as <?php echo $_SESSION['username'] ;?></p>
 <p class="logged-in"><a href="teachersLoginForm.php">Log-Out</a></p>
 
@@ -24,22 +35,52 @@ session_start();
         <h3>Add Student</h3>
     </div>
 <form action="saveStudentProcess.php" method="get">
-    <input type="number" name="admissionNo" placeholder="Admission number">
-    <input type="text" name="name" placeholder="Student's full name">
-    <input type="text" name="username" placeholder="Username">
-    <input type="text" name="password" value="<?php echo date("Y");?>">
-    <input type="date" name="dob" placeholder="dd-mm-yyyy">
+    
+    <p class="us-form-p"><label for="admissionNo" class="us-form-label">Admission number:</label>
+    <input type="number" name="admissionNo" id="admissionNo" placeholder="Admission number">
+    </p>
+
+    <p class="us-form-p"><label for="name" class="us-form-label">Student's full name:</label>
+    <input type="text" name="name" id="name" placeholder="Student's full name">
+    </p>
+
+    <p class="us-form-p"><label for="username" class="us-form-label">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Username">
+    </p>
+
+    <p class="us-form-p"><label for="password" class="us-form-label">Password:</label>
+        <input type="text" name="password" id="password" value="<?php echo date("Y");?>">
+    </p>
+
+    <p class="us-form-p"><label for="dob" class="us-form-label">Date of birth:</label>
+        <input type="date" name="dob" id="dob" placeholder="dd-mm-yyyy">
+    </p>
+
     <label for="gender">Gender:</label><br>
     <nobr>
     <span class="male"><input type="radio" name="gender" value="male"><label for="male">male</label></span>
     <span class="female"><input type="radio" name="gender" value="female"><label for="female">female</label></span>
     <span class="other"><input type="radio" name="gender" value="other"><label for="other">other</label></span>
     </nobr>
-    <input type="text" name="class" placeholder="Student's class">
-    <input type="text" name="parentsNo" placeholder="Guardian's Phone">
+
+    <p class="us-form-p"><label for="class" class="us-form-label">Student's class:</label>
+        <input type="text" name="class" id="class" placeholder="Student's class">
+    </p>
+
+    <p class="us-form-p"><label for="parentsNo" class="us-form-label">Guardian's Phone:</label>
+        <input type="text" name="parentsNo" id="parentsNo" placeholder="Guardian's Phone">
+    </p>
+
     <input type="submit" name="submit_btn" value="Save">
-    <a href="showStudents.php" class="btn bg-warning form-cancel">Show Students</a>
 </form>
+</div>
+
+</div>
+
+<div class="ssu-footer">
+
+    <p>powered by Tazusi.co ltd &copy;<?php echo date("Y");?></p>
+
 </div>
 </body>
 </html>

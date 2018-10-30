@@ -116,7 +116,7 @@ if (isset($_POST['reg-btn']))
 }
 
 ?>
-<div class="reg-form-main-container my-0">
+<div class="reg-form-main-container bg-warning my-0">
 <div class="reg-form-wrapper">
     <div class="form-header">
         <h2><nobr>Teachers' Registration</nobr></h2>
@@ -153,8 +153,8 @@ if (isset($_POST['reg-btn']))
 </div>
 </div>
 
-<div class="footer reg-footer">
-    <p>&copy; victor.w.julius <?php echo date("Y");?></p>
-</div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>
