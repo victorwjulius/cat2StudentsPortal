@@ -14,7 +14,9 @@ if (isset($_POST['teachers-login-btn']))
     {
 
         include 'db.conn.php';
+
         $select = "select * from users where email='$usernameOrEmail' or (username='$usernameOrEmail')";
+
         $result = mysqli_query($conn, $select);
         $rows = mysqli_num_rows($result);
 
